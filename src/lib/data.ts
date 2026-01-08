@@ -97,7 +97,7 @@ export const projects = [
     tech: ["Python", "RAG", "LLM", "Qdrant","MCP"],
     github: "https://github.com/hannesegi/ai-chatbot",
     // demo: "https://huggingface.co/spaces/hanes/news-analyzer",
-    image: "AI-Portofolio/public/img/aiverse-chat.png"
+    image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-qc7xplTaG2jJpvFiKUFKROLMibj95YpHZI7z-exitRWvnRb-BOgkTWDWATudGzXe3RL2sf1oCNh7Ro_9xtpTPE6oKfO4GE6-RX1zAl3g6JjBrkp2a1OVStxtxEzYIqlTmC0nVXlJlja7XMZBTQomtCotPrnKnzV1avsUwJGk_jtHvx7JhL__26fT2h8n/s2532/aiverse-chat.png"
   },
   // {
   //   title: "Real-time Object Detection for Retail",
@@ -133,7 +133,7 @@ export const projects = [
     tech: ["OpenAI", "LLM", "NextJs"],
     github: "https://github.com/hannesegi/smart-retail-ai-chat",
     // demo: "https://huggingface.co/spaces/hanes/rag-support-bot",
-    image: "/Users/yohanesegipratama2608/Downloads/project-ai/AI-Portofolio/public/img/Toko-GPT.png"
+    image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEge1_RtarNxaO01_z7b4z03jBivKKVzvDM9L9eMvAKrp6rTgTTHZ3TsJwBYOCsxNqfqo43kmblz8teOnsCbtUWwk-tlmTAFZI4Mrs-MKt2_yN75ZWRHlPsn-z95E9x-KM7TgLEXhKoYG55bsP6KLfQGj4_fBZRR5GY1AqN0arPFveKjSZUjGtYcoFERm-oy/s1378/Toko-GPT.png"
   },
   // {
   //   title: "Multi-Agent Financial Analyst Swarm",
