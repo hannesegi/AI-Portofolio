@@ -23,7 +23,7 @@ import {
 
 export const siteConfig = {
   name: "Yohanes Egi",
-  title: "AI Engineer",
+  title: "Full Stack AI Engineer",
   tagline: "Building intelligent systems with LLMs, Computer Vision, and Multimodal AI.",
   linkedin: "https://www.linkedin.com/in/yohanesegipratamayudoutomo/",
   github: "https://github.com/hanes-projects",
@@ -91,13 +91,13 @@ export const techStack = [
 
 export const projects = [
   {
-    title: "AI Verse Chat",
+    title: "Toko GPT",
     category: "NLP",
     description: "LLM-powered system for news crawling, sentiment analysis, NER, and issue extraction.",
-    tech: ["Python", "RAG", "LLM", "Qdrant","MCP"],
-    github: "https://github.com/hannesegi/ai-chatbot",
-    // demo: "https://huggingface.co/spaces/hanes/news-analyzer",
-    image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-qc7xplTaG2jJpvFiKUFKROLMibj95YpHZI7z-exitRWvnRb-BOgkTWDWATudGzXe3RL2sf1oCNh7Ro_9xtpTPE6oKfO4GE6-RX1zAl3g6JjBrkp2a1OVStxtxEzYIqlTmC0nVXlJlja7XMZBTQomtCotPrnKnzV1avsUwJGk_jtHvx7JhL__26fT2h8n/s2532/aiverse-chat.png"
+    tech: ["Python", "LangChain", "LLM", "Elasticsearch"],
+    github: "https://github.com/hanes-projects/news-intelligence-engine",
+    demo: "None",
+    image: "/img/Toko-GPT.png"
   },
   // {
   //   title: "Real-time Object Detection for Retail",
@@ -106,7 +106,7 @@ export const projects = [
   //   tech: ["TensorFlow", "YOLOv8", "FastAPI", "Docker"],
   //   github: "https://github.com/hanes-projects/retail-object-detection",
   //   demo: "https://huggingface.co/spaces/hanes/retail-object-detection-demo",
-  //   image: "https://picsum.photos/seed/2/600/400"
+  //   image: "/img/retail-object-detection.png"
   // },
   // {
   //   title: "Multimodal Image-to-Recipe Generator",
@@ -115,7 +115,7 @@ export const projects = [
   //   tech: ["PyTorch", "Next.js", "CLIP", "ViT"],
   //   github: "https://github.com/hanes-projects/image-to-recipe",
   //   demo: "https://hanes-image-to-recipe.vercel.app",
-  //   image: "https://picsum.photos/seed/3/600/400"
+  //   image: "/img/image-to-recipe.png"
   // },
   // {
   //   title: "Autonomous AI Agent for Web Research",
@@ -124,16 +124,16 @@ export const projects = [
   //   tech: ["CrewAI", "LangChain", "Serper API"],
   //   github: "https://github.com/hanes-projects/web-research-agent",
   //   demo: "",
-  //   image: "https://picsum.photos/seed/4/600/400"
+  //   image: "/img/web-research-agent.png"
   // },
   {
-    title: "TokoGPT",
+    title: "Customer Support Chatbot with RAG",
     category: "NLP",
-    description: "AI Retail Assistant is a web-based AI chat application using DeepSeek API that enables customers to ask via text or voice about product availability, prices, shelf locations, nutrition, and recipes. It supports shopping lists, rack visualization, product substitution, and user history.",
-    tech: ["OpenAI", "LLM", "NextJs"],
-    github: "https://github.com/hannesegi/smart-retail-ai-chat",
-    // demo: "https://huggingface.co/spaces/hanes/rag-support-bot",
-    image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEge1_RtarNxaO01_z7b4z03jBivKKVzvDM9L9eMvAKrp6rTgTTHZ3TsJwBYOCsxNqfqo43kmblz8teOnsCbtUWwk-tlmTAFZI4Mrs-MKt2_yN75ZWRHlPsn-z95E9x-KM7TgLEXhKoYG55bsP6KLfQGj4_fBZRR5GY1AqN0arPFveKjSZUjGtYcoFERm-oy/s1378/Toko-GPT.png"
+    description: "An intelligent chatbot using Retrieval-Augmented Generation to provide accurate answers from a knowledge base.",
+    tech: ["LlamaIndex", "Qdrant", "FastAPI"],
+    github: "https://github.com/hanes-projects/rag-chatbot",
+    demo: "None",
+    image: "/img/aiverse-chat.png"
   },
   // {
   //   title: "Multi-Agent Financial Analyst Swarm",
@@ -142,7 +142,7 @@ export const projects = [
   //   tech: ["Autogen", "Python", "Tavily API"],
   //   github: "https://github.com/hanes-projects/financial-agent-swarm",
   //   demo: "",
-  //   image: "https://picsum.photos/seed/6/600/400"
+  //   image: "/img/financial-agent-swarm.png"
   // },
 ];
 
@@ -177,7 +177,16 @@ export const experience = [
       "Collaborated on research-driven AI solutions, translating experimental models into production-ready systems.",
     ]
     ,
-  }
+  },
+  // {
+  //   company: "Tech Innovators (Internship)",
+  //   role: "AI Research Intern",
+  //   duration: "May 2017 - Aug 2017",
+  //   accomplishments: [
+  //     "Researched and implemented state-of-the-art algorithms in natural language processing.",
+  //     "Contributed to the development of a prototype for an internal knowledge base search engine.",
+  //   ],
+  // },
 ];
 
 export const huggingFaceProjects = [

@@ -59,12 +59,12 @@ export default function Footer() {
             <div className="space-y-3 text-muted-foreground">
                 <div className="flex items-center gap-3">
                     <Mail className="h-5 w-5" />
-                    <a href="mailto:contact@example.com" className="hover:text-primary transition-colors">contact@example.com</a>
+                    <a href="mailto:contact@example.com" className="hover:text-primary transition-colors">yohanesegipratama26@gmail.com</a>
                 </div>
-                 <div className="flex items-center gap-3">
+                 {/* <div className="flex items-center gap-3">
                     <Phone className="h-5 w-5" />
                     <span>+1 (234) 567-890</span>
-                </div>
+                </div> */}
             </div>
         </div>
       </div>

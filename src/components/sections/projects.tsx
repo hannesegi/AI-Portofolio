@@ -34,9 +34,9 @@ function ProjectCard({ project, onEdit, onDelete, isLoggedIn }: { project: (type
       className="flex"
     >
       <Card className="flex flex-col w-full hover:shadow-lg transition-shadow overflow-hidden">
-        <div className="aspect-video relative">
+        <div className="aspect-video relative bg-muted">
             <Image 
-                src={project.image || "https://picsum.photos/seed/placeholder/600/400"}
+                src={project.image || "/img/placeholder.png"}
                 alt={project.title}
                 fill
                 className="object-cover"
@@ -192,8 +192,8 @@ export default function Projects() {
                 <Input id="title" value={formData.title} onChange={handleFormChange} required />
               </div>
               <div className="space-y-2">
-                <Label htmlFor="image">Image URL</Label>
-                <Input id="image" type="url" value={formData.image} onChange={handleFormChange} placeholder="https://example.com/image.png" />
+                <Label htmlFor="image">Image Path</Label>
+                <Input id="image" type="text" value={formData.image} onChange={handleFormChange} placeholder="/img/project-name.png" />
               </div>
               <div className="space-y-2">
                 <Label htmlFor="category">Category</Label>

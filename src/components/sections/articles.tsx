@@ -21,16 +21,15 @@ import { Textarea } from "@/components/ui/textarea";
 // Mock data, will be replaced with data from a data source
 const initialArticles = [
     {
-        title: "Getting Started with CrewAI for Multi-Agent Systems",
-        description: "A deep dive into building collaborative AI agents that can tackle complex tasks together.",
-        link: "https://medium.com/@yohanes.egi/getting-started-with-crewai-for-multi-agent-systems-231a47483833",
+        title: "Build a Modern RAG Pipeline in 2026: Docling + Qdrant Hybrid (BM25 + Dense) + AI Agent Step-by-Step Guide with Practical Code",
+        description: "Retrieval-Augmented Generation (RAG) continues to be the most practical way to build reliable, hallucination-resistant AI applications in 2026.",
         type: "medium"
     },
     {
-        title: "Custom Project: My Portfolio Website",
-        description: "This is a custom article added directly to the portfolio.",
-        content: "I built this portfolio to showcase my skills in Next.js, TailwindCSS, and AI. It's fully editable and I can add new projects, experiences, and articles on the fly.",
-        type: "custom"
+        title: "Single-GPU vLLM Deployment: Running Nemotron-3-Nano-30B on RTX A6000 An Architecture Deep Dive",
+        description: "NVIDIA’s Nemotron-3-Nano-30B-A3B (released December 2025) is a breakthrough in open-weight, efficient reasoning models. With a hybrid Mamba-Transformer + Mixture-of-Experts (MoE) architecture",
+        link: "https://medium.com/@yohanesegipratama/single-gpu-vllm-deployment-running-nemotron-3-nano-30b-on-rtx-a6000-an-architecture-deep-dive-e99fa4fcc45c",
+        type: "medium"
     }
 ];
 
