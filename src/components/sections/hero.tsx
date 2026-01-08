@@ -406,7 +406,7 @@ export default function Hero() {
   const ActiveComponent = animations.find(a => a.id === activeAnimation)?.component;
 
   return (
-    <section className="container grid lg:grid-cols-2 gap-12 items-center justify-center text-center lg:text-left min-h-[calc(100vh-4rem)] py-20 md:py-32">
+    <section className="container grid lg:grid-cols-2 gap-12 items-center justify-center text-center min-h-[calc(100vh-4rem)] py-20 md:py-32">
       {/* Left Column: Text Content */}
       <motion.div
         initial="hidden"
@@ -416,7 +416,7 @@ export default function Hero() {
           hidden: {},
           show: { transition: { staggerChildren: 0.15 } },
         }}
-        className="flex flex-col items-center lg:items-start"
+        className="flex flex-col items-center justify-center lg:items-start lg:text-left"
       >
         <motion.div variants={FADE_IN_ANIMATION_VARIANTS}>
           <h1 className="text-5xl md:text-7xl font-black tracking-tight mb-4">

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { projects as initialProjects } from "@/lib/data";
 import { Button } from "@/components/ui/button";
@@ -32,7 +33,16 @@ function ProjectCard({ project, onEdit, onDelete, isLoggedIn }: { project: (type
       transition={{ type: "spring", stiffness: 260, damping: 20 }}
       className="flex"
     >
-      <Card className="flex flex-col w-full hover:shadow-lg transition-shadow">
+      <Card className="flex flex-col w-full hover:shadow-lg transition-shadow overflow-hidden">
+        <div className="aspect-video relative">
+            <Image 
+                src={project.image || "https://picsum.photos/seed/placeholder/600/400"}
+                alt={project.title}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            />
+        </div>
         <CardHeader>
           <div className="flex justify-between items-start">
             <CardTitle className="text-xl">{project.title}</CardTitle>
@@ -57,7 +67,7 @@ function ProjectCard({ project, onEdit, onDelete, isLoggedIn }: { project: (type
             </div>
           )}
         </CardContent>
-        <CardFooter className="flex justify-between items-center">
+        <CardFooter className="flex justify-between items-center mt-auto">
             <div className="flex gap-2">
                 <Button variant="outline" asChild>
                     <a href={project.github} target="_blank" rel="noopener noreferrer">
@@ -86,7 +96,7 @@ export default function Projects() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [editingProject, setEditingProject] = useState(null);
-  const [formData, setFormData] = useState({ title: "", category: "NLP", description: "", tech: "", github: "", demo: "" });
+  const [formData, setFormData] = useState({ title: "", category: "NLP", description: "", tech: "", github: "", demo: "", image: "" });
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -126,13 +136,13 @@ export default function Projects() {
       setProjects([...projects, projectData]);
     }
     setEditingProject(null);
-    setFormData({ title: "", category: "NLP", description: "", tech: "", github: "", demo: "" });
+    setFormData({ title: "", category: "NLP", description: "", tech: "", github: "", demo: "", image: "" });
     setIsDialogOpen(false);
   };
   
   const openNewProjectDialog = () => {
     setEditingProject(null);
-    setFormData({ title: "", category: "NLP", description: "", tech: "", github: "", demo: "" });
+    setFormData({ title: "", category: "NLP", description: "", tech: "", github: "", demo: "", image: "" });
     setIsDialogOpen(true);
   };
 
@@ -180,6 +190,10 @@ export default function Projects() {
               <div className="space-y-2">
                 <Label htmlFor="title">Title</Label>
                 <Input id="title" value={formData.title} onChange={handleFormChange} required />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="image">Image URL</Label>
+                <Input id="image" type="url" value={formData.image} onChange={handleFormChange} placeholder="https://example.com/image.png" />
               </div>
               <div className="space-y-2">
                 <Label htmlFor="category">Category</Label>
